@@ -8,7 +8,7 @@ find * -exec md5 {} \; >> raw.md5.list
 
 #Find the duplicates
 echo "-|Getting Duplicate MD5s"
-cat raw.md5.list | cut -d \  -f 4  | sort | uniq -d > dupe.md5.list
+cat raw.md5.list | cut -d = -f 2 | sort | uniq -d > dupe.md5.list
 
 #Get paths of duplicates
 rm paths.dupes.list
