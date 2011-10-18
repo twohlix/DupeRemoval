@@ -1,0 +1,9 @@
+Duplicate Removal
+
+Setup the Script
+a simple chmod 700 duplicates.sh (770) should do the trick
+
+Remove Duplicates
+Right now you have to place the script in the top level of the directory tree where you want to remove the duplicates. This should be changed to a target of the top level later. (simple cd to the target. After script completion a cd - should work)
+
+This was created to fix hyrcan's massive amounts of duplicate mp3s but it should be applicable to any file type.
